@@ -1,17 +1,17 @@
-import { HTMLAttributes, ReactNode } from 'react'
-import styled from 'styled-components'
+import { HTMLAttributes, ReactNode } from "react";
+import styled from "styled-components";
 
 const StyledContainer = styled.div`
-	max-width: 1920px;
-	width: 100%;
-	padding: 0 60px;
-	margin: 0 auto;
-`
+  max-width: calc(var(--app-width) - var(--app-padding));
+  width: 100%;
+  padding: 0 40px;
+  margin: 0 auto;
+`;
 
 interface ContainerProps extends HTMLAttributes<HTMLDivElement> {
-	children: ReactNode
+  children: ReactNode;
 }
 
 export default function Container({ children, ...props }: ContainerProps) {
-	return <StyledContainer {...props}>{children}</StyledContainer>
+  return <StyledContainer {...props}>{children}</StyledContainer>;
 }

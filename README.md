@@ -12,8 +12,15 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/cr1tcizd/task-app.git
-   cd simple-backend
+   git clone --branch=backend https://github.com/cr1tcizd/task-app.git
+   cd backend
    ```
 
-2.
+2. Установка зависимостей:
+   ```bach
+   npm install
+   ```
+3. Запуск сервера:
+   ```bash
+   npm run dev
+   ```

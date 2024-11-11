@@ -3,6 +3,7 @@ import MainPageInfoItem from './MainPageInfoItem'
 import styled from 'styled-components'
 import StyledButton from 'shared/ui/StyledButton'
 import Container from 'shared/ui/Container'
+import { useNavigate } from 'react-router-dom'
 
 const StyledSection = styled.section`
 	padding: 40px 0;
@@ -35,6 +36,7 @@ const StyledItems = styled.div`
 `
 
 export default function MainPageSectionInfo() {
+	const navigate = useNavigate()
 	return (
 		<StyledSection>
 			<Container>
@@ -49,7 +51,9 @@ export default function MainPageSectionInfo() {
 							<MainPageInfoItem />
 							<MainPageInfoItem />
 						</StyledItems>
-						<StyledButton>Contact Us</StyledButton>
+						<StyledButton onClick={() => navigate('/contact-us-auth')}>
+							Contact Us
+						</StyledButton>
 					</StyledContainer>
 				</StyledContent>
 			</Container>

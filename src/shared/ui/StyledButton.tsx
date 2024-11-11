@@ -14,7 +14,8 @@ export default function StyledButton({
 				background: '#2C2C2C',
 				borderRadius: '12px',
 				textTransform: 'none',
-				padding: '8px 60px',
+				padding: '8px 50px',
+				fontFamily: 'Times New Roman',
 			}}
 			{...props}
 		>

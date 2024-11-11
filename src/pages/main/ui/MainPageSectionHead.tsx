@@ -1,3 +1,4 @@
+import YouTube from 'react-youtube'
 import Container from 'shared/ui/Container'
 import Description from 'shared/ui/Description'
 import { Title } from 'shared/ui/Title'
@@ -35,12 +36,21 @@ const LeftContent = styled.div`
 `
 
 const RightContainer = styled.div`
+	position: relative;
 	flex-grow: 1;
 	flex-basis: 100%;
 	flex-shrink: 1;
 `
 
 export default function MainPageSectionHead() {
+	const videoOptions = {
+		width: '100%',
+		height: 250,
+		playerVars: {
+			autoplay: 0,
+		},
+	}
+
 	return (
 		<StyledSection>
 			<Container>
@@ -56,13 +66,7 @@ export default function MainPageSectionHead() {
 						</LeftContent>
 					</LeftContainer>
 					<RightContainer>
-						<iframe
-							width='100%'
-							height='235'
-							src='https://www.youtube.com/embed/dQw4w9WgXcQ'
-							allowFullScreen
-							title='Embedded youtube'
-						/>
+						<YouTube videoId='dQw4w9WgXcQ' opts={videoOptions} />
 					</RightContainer>
 				</StyledContent>
 			</Container>

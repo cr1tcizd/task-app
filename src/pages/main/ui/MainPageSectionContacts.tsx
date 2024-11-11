@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import StyledButton from 'shared/ui/StyledButton'
 import { Subject } from 'shared/ui/Title'
 import styled from 'styled-components'
@@ -15,10 +16,13 @@ const StyledSection = styled.section`
 `
 
 export default function MainPageSectionContacts() {
+	const navigate = useNavigate()
 	return (
 		<StyledSection>
 			<Subject justify-content='center'>Less important title</Subject>
-			<StyledButton>Contact us</StyledButton>
+			<StyledButton onClick={() => navigate('/contact-us-auth')}>
+				Contact us
+			</StyledButton>
 		</StyledSection>
 	)
 }

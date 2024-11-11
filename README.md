@@ -47,9 +47,9 @@
     yarn install
    ```
 3. Запуск сервера разработки:
-  ``` bash
-    npm run dev
-    # или
-    yarn dev
-  ```
+    ``` bash
+      npm run dev
+      # или
+      yarn dev
+    ```
 4. Откройте браузер и перейдите по адресу http://localhost:3000.

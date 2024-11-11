@@ -37,8 +37,8 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/yourusername/simple-website.git
-   cd simple-website
+   git clone https://github.com/cr1tcizd/task-app.git
+   cd task-app
    ```
 2. Установка зависимостей: 
    ``` bash
